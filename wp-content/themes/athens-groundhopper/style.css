@@ -1,0 +1,25 @@
+/*
+Theme Name:   Athens Groundhopper
+Theme URI:    https://example.com
+Author:       Kostas Stoumpos
+Author URI:   https://example.com
+Description:  A guide to Athens' football scene — Champions League nights, non-league Sundays, and women's football — with a fan-funded AED campaign for grounds that still need a defibrillator. A classic (non-block) theme: PHP templates, styled entirely with Tailwind.
+Version:      0.1.0
+Requires at least: 6.5
+Tested up to: 6.7
+Requires PHP: 8.0
+License:      GNU General Public License v2 or later
+License URI:  https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain:  athens-groundhopper
+*/
+
+/*
+ * This file exists only because WordPress requires a style.css header on
+ * every theme. No rules belong here: functions.php's editor-color-palette /
+ * editor-font-sizes support still drives the block editor's colour/type
+ * pickers (so content editors writing a Ground or Campaign's body text get
+ * on-brand swatches), but every actual utility class on the page is
+ * Tailwind, compiled to assets/css/tailwind.css and enqueued from
+ * functions.php. See tailwind.config.js for the same tokens expressed as
+ * Tailwind theme keys.
+ */

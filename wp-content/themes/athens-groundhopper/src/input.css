@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * A handful of small, named, reused-everywhere combinations. These are NOT
+ * a return to scattered CSS — they're @apply shorthands for patterns that
+ * repeat across templates/parts (a primary button, a progress bar), kept
+ * here so the HTML templates read as intent ("ag-btn-primary") rather than
+ * a wall of utility classes. Every value used is still a design token.
+ */
+@layer components {
+  .ag-btn {
+    @apply inline-flex items-center justify-center font-label font-semibold text-label-lg uppercase tracking-[0.4px] px-8 py-4 rounded-none;
+  }
+  .ag-btn-primary {
+    @apply ag-btn bg-amf-red text-white;
+  }
+  .ag-btn-outline {
+    @apply ag-btn bg-transparent text-paper-light border border-zinc-800;
+  }
+  .ag-progress-track {
+    @apply bg-zinc-900 h-2 w-full;
+  }
+  .ag-progress-fill {
+    @apply bg-amf-red h-full;
+  }
+  .ag-pill {
+    @apply rounded-full;
+  }
+  .ag-card {
+    @apply bg-card-dark border border-zinc-800;
+  }
+}
